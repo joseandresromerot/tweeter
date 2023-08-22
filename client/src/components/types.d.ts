@@ -6,14 +6,10 @@ interface NavbarOption {
 
 interface BottomNavbarProps {
   options: NavbarOption[]
-};
+}
 
 interface TopNavbarProps {
   options: NavbarOption[]
-};
-
-interface UserPopupProps {
-  children: React.ReactNode
 }
 
 interface UserPopupLinkProps {

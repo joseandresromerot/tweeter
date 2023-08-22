@@ -19,11 +19,7 @@ const UserInfo = () => {
         <FontAwesomeIcon icon={faCaretDown} className="text-black" />
       </button>
 
-      {userPopupVisible &&
-        <UserPopup>
-          <LogoutButton />
-        </UserPopup>
-      }
+      {userPopupVisible && <UserPopup />}
     </div>
   );
 };
