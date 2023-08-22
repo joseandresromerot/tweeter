@@ -1,3 +1,4 @@
+import AppContext from '@/context/AppContext'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Nunito_Sans, Nunito } from 'next/font/google'
@@ -26,7 +27,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${nunito.variable} ${nunito_sans.variable}`}>{children}</body>
+      <body className={`${nunito.variable} ${nunito_sans.variable}`}>
+        <AppContext>
+          {children}
+        </AppContext>
+      </body>
     </html>
   )
 }

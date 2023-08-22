@@ -11,3 +11,13 @@ interface BottomNavbarProps {
 interface TopNavbarProps {
   options: NavbarOption[]
 };
+
+interface UserPopupProps {
+  children: React.ReactNode
+}
+
+interface UserPopupLinkProps {
+  href: string
+  label: string
+  icon: IconProp
+}
