@@ -17,7 +17,7 @@ export enum AvatarSize {
 const SIZES_CLASS_NAMES = {
   [AvatarSize.XS]: "w-[20px] h-[20px]",
   [AvatarSize.SM]: "w-[40px] h-[40px]",
-  [AvatarSize.MD]: "w-[70px] h-[70px]",
+  [AvatarSize.MD]: "w-[55px] h-[55px]",
   [AvatarSize.LG]: "w-[100px] h-[100px]",
   [AvatarSize.XL]: "w-[150px] h-[150px]"
 };

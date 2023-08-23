@@ -11,7 +11,7 @@ const TopNavbar = ({ options }: TopNavbarProps) => {
   const pathname = usePathname();
 
   return (
-    <header className="bg-white h-[60px] flex flex-row justify-between items-stretch px-5">
+    <header className="bg-white h-[60px] flex flex-row justify-between items-stretch px-5 shadow-[0px_2px_2px_0px_#0000000D]">
       <Image src={smallLogo} alt="Tweeter" className="md:hidden" />
       <Image src={bigLogo} alt="Tweeter" className="hidden md:block" />
 

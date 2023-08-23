@@ -1,5 +1,9 @@
+import WhatsHappening from "@/components/home/WhatsHappening";
+
 export default function Page() {
   return (
-    <h1>This is the home page</h1>
+    <div className="w-full px-8 pt-6">
+      <WhatsHappening />
+    </div>
   )
 }

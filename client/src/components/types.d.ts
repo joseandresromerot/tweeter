@@ -17,3 +17,18 @@ interface UserPopupLinkProps {
   label: string
   icon: IconProp
 }
+
+interface ReplyType {
+  key: string
+  label: string
+  icon: IconProp
+}
+
+interface WhoCanReplyPopupProps {
+  buttons: ReplyType[]
+  onChange: (key: string) => void
+}
+
+interface WhoCanReplyPopupButtonProps extends ReplyType {
+  onClick: () => void
+}
