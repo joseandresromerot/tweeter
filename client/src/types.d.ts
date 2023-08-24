@@ -78,7 +78,7 @@ interface TweetPostProps {
   tweet: Tweet
 }
 
-interface TweetPostRetweetedBy {
+interface TweetPostRetweetedByProps {
   retweetedByFullname: string
 }
 
@@ -120,4 +120,12 @@ interface TweetPostActionProps {
   activeColor?: string
   icon: IconProp
   onClick: () => void
+}
+
+interface TweetPostCommentsProps {
+  comments: CommentData[]
+}
+
+interface TweetPostCommentProps {
+  comment: CommentData
 }

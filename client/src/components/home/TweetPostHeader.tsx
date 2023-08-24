@@ -1,3 +1,4 @@
+import { TweetPostHeaderProps } from "@/types";
 import Avatar, { AvatarSize } from "../Avatar";
 import { format } from "date-fns";
 

@@ -6,7 +6,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons"
 import UserPopup from "./UserPopup";
 import { ApplicationContext } from "@/context/AppContext";
-import LogoutButton from "./LogoutButton";
 
 const UserInfo = () => {
   const { userPopupVisible, toggleUserPopup } = useContext(ApplicationContext);

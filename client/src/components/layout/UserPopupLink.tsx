@@ -1,3 +1,4 @@
+import { UserPopupLinkProps } from "@/types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 

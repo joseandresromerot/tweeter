@@ -1,3 +1,5 @@
+import { TweetPostStatsProps } from "@/types";
+
 const TweetPostStats = ({ numberOfComments, numberOfRetweets, numberOfSaved }: TweetPostStatsProps) => {
 
   const roundValue = (value: number): string => {

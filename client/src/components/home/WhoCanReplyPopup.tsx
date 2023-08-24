@@ -1,3 +1,4 @@
+import { WhoCanReplyPopupProps } from "@/types";
 import WhoCanReplyPopupButton from "./WhoCanReplyPopupButton";
 
 const WhoCanReplyPopup = ({ buttons, onChange }: WhoCanReplyPopupProps) => {

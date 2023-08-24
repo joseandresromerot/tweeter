@@ -1,5 +1,6 @@
 "use client";
 
+import { WhoCanReplyPopupButtonProps } from "@/types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const WhoCanReplyPopupButton = ({ label, icon, onClick }: WhoCanReplyPopupButtonProps) => {

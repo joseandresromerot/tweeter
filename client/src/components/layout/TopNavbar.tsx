@@ -6,6 +6,7 @@ import bigLogo from "../../../public/tweeter.svg";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import UserInfo from "./UserInfo";
+import { TopNavbarProps } from "@/types";
 
 const TopNavbar = ({ options }: TopNavbarProps) => {
   const pathname = usePathname();

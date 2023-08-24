@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { usePathname } from "next/navigation";
+import { BottomNavbarProps } from "@/types";
 
 const BottomNavbar = ({ options }: BottomNavbarProps) => {
   const pathname = usePathname();

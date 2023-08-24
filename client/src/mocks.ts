@@ -18,7 +18,7 @@ export const timeline: Timeline = {
       retweetedByMe: true,
       likedByMe: true,
       savedByMe: true,
-      numberOfComments: 1,
+      numberOfComments: 2,
       numberOfRetweets: 59120,
       numberOfSaved: 234,
       retweetedBy: {
@@ -37,6 +37,19 @@ export const timeline: Timeline = {
           message: "First comment :)",
           pictureUrl: null,
           numberOfLikes: 12000,
+          likedByMe: true
+        },
+        {
+          id: "3",
+          user: {
+            id: "1",
+            fullname: "Peyton Lyons",
+            avatarUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80",
+          },
+          datetime: 1692809270,
+          message: "Another comment :)",
+          pictureUrl: null,
+          numberOfLikes: 10,
           likedByMe: true
         }
       ]
