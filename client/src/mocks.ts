@@ -1,3 +1,5 @@
+import { Timeline } from "./types";
+
 export const timeline: Timeline = {
   totalItems: 2,
   totalPages: 1,

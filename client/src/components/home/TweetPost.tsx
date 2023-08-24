@@ -2,6 +2,8 @@ import TweetPostHeader from "./TweetPostHeader";
 import TweetPostRetweetedBy from "./TweetPostRetweetedBy";
 import TweetPostPicture from "./TweetPostPicture";
 import TweetPostStats from "./TweetPostStats";
+import TweetPostActions from "./TweetPostActions";
+import { TweetPostProps } from "@/types";
 
 const TweetPost = ({ tweet }: TweetPostProps) => {
   const {
@@ -12,7 +14,10 @@ const TweetPost = ({ tweet }: TweetPostProps) => {
     pictureUrl,
     numberOfComments,
     numberOfRetweets,
-    numberOfSaved
+    numberOfSaved,
+    retweetedByMe = false,
+    likedByMe = false,
+    savedByMe = false
   } = tweet;
   const { fullname: retweetedByFullname = "" } = retweetedBy ?? {};
   const { avatarUrl, fullname: userFullname = "" } = user ?? {};
@@ -29,6 +34,8 @@ const TweetPost = ({ tweet }: TweetPostProps) => {
         {pictureUrl && <TweetPostPicture pictureUrl={pictureUrl} />}
 
         <TweetPostStats numberOfComments={numberOfComments} numberOfRetweets={numberOfRetweets} numberOfSaved={numberOfSaved} />
+
+        <TweetPostActions retweetedByMe={retweetedByMe} likedByMe={likedByMe} savedByMe={savedByMe} />
       </div>
     </div>
   );

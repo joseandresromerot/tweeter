@@ -1,3 +1,5 @@
+import { IconProp } from "@fortawesome/fontawesome-svg-core"
+
 interface UserData {
   id: string
   fullname: string
@@ -94,4 +96,28 @@ interface TweetPostStatsProps {
   numberOfComments: number
   numberOfRetweets: number
   numberOfSaved: number
+}
+
+interface TweetAction {
+  label: string
+  activeLabel: string
+  icon: IconProp,
+  activeColor: string
+  activeField?: string
+  onClick: () => void
+}
+
+interface TweetPostActionsProps {
+  retweetedByMe: boolean
+  likedByMe: boolean
+  savedByMe: boolean
+}
+
+interface TweetPostActionProps {
+  label: string
+  activeLabel?: string
+  active: boolean
+  activeColor?: string
+  icon: IconProp
+  onClick: () => void
 }
