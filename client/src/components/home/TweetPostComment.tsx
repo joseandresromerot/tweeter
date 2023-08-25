@@ -30,7 +30,7 @@ const TweetPostComment = ({ comment }: TweetPostCommentProps) => {
           <p className="font-sans text-[#4F4F4F]">{message}</p>
         </div>
         <div className="flex items-center space-x-2 mt-1">
-          <button className="flex items-center space-x-1" style={{ color: likedByMe ? "#EB5757" : "#BDBDBD" }}>
+          <button className="flex items-center space-x-1 hover:bg-[#F2F2F2] rounded-md px-1" style={{ color: likedByMe ? "#EB5757" : "#BDBDBD" }}>
             <FontAwesomeIcon icon={faHeart} className="text-[12px]" />
             <span className="font-sans text-[12px]">{likedByMe ? "Liked" : "Like"}</span>
           </button>

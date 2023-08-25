@@ -8,9 +8,9 @@ const TweetPostNewComment = () => {
       <Avatar size={AvatarSize.SM} />
       <div className="flex items-stretch flex-1 bg-[#FAFAFA] h-[40px] py-1 px-3 rounded-lg">
         <input placeholder="Tweet your reply" className="flex-1 bg-transparent focus:outline-none bottom-0 text-black font-sans placeholder:text-[#BDBDBD]" />
-        <button className="flex flex-col items-center justify-center px-2">
+        {/*<button className="flex flex-col items-center justify-center px-2">
           <FontAwesomeIcon icon={faImage} className="text-[#BDBDBD]" />
-        </button>
+        </button>*/}
       </div>
     </div>
   );
