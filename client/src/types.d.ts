@@ -129,3 +129,12 @@ interface TweetPostCommentsProps {
 interface TweetPostCommentProps {
   comment: CommentData
 }
+
+interface Trend {
+  keyword: string
+  numberOfTweets: number
+}
+
+interface TrendPanelProps {
+  trend: Trend
+}

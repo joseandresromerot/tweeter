@@ -4,19 +4,13 @@ import { faHeart, faImage } from "@fortawesome/free-regular-svg-icons";
 import { TweetPostCommentProps } from "@/types";
 import { format } from "date-fns";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
+import { roundValue } from "@/utils";
 
 const TweetPostComment = ({ comment }: TweetPostCommentProps) => {
   const { user, datetime, message = "", likedByMe, numberOfLikes } = comment;
   const { fullname, avatarUrl } = user ?? {};
   const date = new Date((datetime as number) * 1000);
   const formattedDate = format(date, "dd MMMM 'at' HH:mm");
-
-  const roundValue = (value: number): string => {
-    if (value > 999) {
-      return `${(value/1000).toFixed(1)}k`;
-    }
-    return value.toString();
-  };
 
   return (
     <div className="flex space-x-3 mb-4">

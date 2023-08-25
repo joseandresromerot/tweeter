@@ -1,4 +1,4 @@
-import { Timeline } from "./types";
+import { Timeline, Trend } from "./types";
 
 export const timeline: Timeline = {
   totalItems: 2,
@@ -90,3 +90,30 @@ export const timeline: Timeline = {
     }
   ]
 };
+
+export const trends: Trend[] = [
+  {
+    keyword: "#programming",
+    numberOfTweets: 213000
+  },
+  {
+    keyword: "#devchallenges",
+    numberOfTweets: 123000
+  },
+  {
+    keyword: "#frontend",
+    numberOfTweets: 34000
+  },
+  {
+    keyword: "#helsinki",
+    numberOfTweets: 11000
+  },
+  {
+    keyword: "#100DaysOfCode",
+    numberOfTweets: 5000
+  },
+  {
+    keyword: "#learntocode",
+    numberOfTweets: 1000
+  }
+];
