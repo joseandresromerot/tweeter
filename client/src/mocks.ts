@@ -1,4 +1,4 @@
-import { Timeline, Trend } from "./types";
+import { Timeline, Trend, UserData } from "./types";
 
 export const timeline: Timeline = {
   totalItems: 2,
@@ -115,5 +115,24 @@ export const trends: Trend[] = [
   {
     keyword: "#learntocode",
     numberOfTweets: 1000
+  }
+];
+
+export const whoToFollow: UserData[] = [
+  {
+    id: "4",
+    fullname: "Mikael Stanley",
+    avatarUrl: "https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg",
+    numberOfFollowers: 230000,
+    landscapeUrl: "https://cdn.pixabay.com/photo/2012/08/27/14/19/mountains-55067_640.png",
+    biography: "Photographer & Filmmaker based in Copenhagen, Denmark"
+  },
+  {
+    id: "5",
+    fullname: "Austin Neill",
+    avatarUrl: "https://pe-images.s3.amazonaws.com/photo-editing/cc/new-features/2015/face-aware-liquify/original.jpg",
+    numberOfFollowers: 120000,
+    landscapeUrl: "https://www.adorama.com/alc/wp-content/uploads/2018/11/landscape-photography-tips-yosemite-valley-feature.jpg",
+    biography: "Follow me on IG: @arstyy"
   }
 ];

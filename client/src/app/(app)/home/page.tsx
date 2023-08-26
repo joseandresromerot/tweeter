@@ -1,6 +1,7 @@
 import TrendsSection from "@/components/home/TrendsSection";
 import TweetPost from "@/components/home/TweetPost";
 import WhatsHappening from "@/components/home/WhatsHappening";
+import WhoToFollowSection from "@/components/home/WhoToFollowSection";
 import { timeline } from "@/mocks";
 
 export default function Page() {
@@ -14,8 +15,9 @@ export default function Page() {
           <TweetPost tweet={tweet} />
         ))}
       </div>
-      <div className="flex-[35] xl:flex-[3] hidden md:block">
+      <div className="flex-[35] xl:flex-[3] hidden md:flex md:flex-col md:items-stretch space-y-6">
         <TrendsSection />
+        <WhoToFollowSection />
       </div>
     </div>
   )

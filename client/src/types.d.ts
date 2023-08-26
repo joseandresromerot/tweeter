@@ -4,6 +4,9 @@ interface UserData {
   id: string
   fullname: string
   avatarUrl?: string
+  numberOfFollowers?: number
+  biography?: string
+  landscapeUrl?: string
 }
 
 interface CommentData {
@@ -137,4 +140,8 @@ interface Trend {
 
 interface TrendPanelProps {
   trend: Trend
+}
+
+interface WhoToFollowUserProps {
+  user: UserData
 }

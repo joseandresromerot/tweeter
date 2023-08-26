@@ -13,6 +13,22 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "www.shutterstock.com"
+      },
+      {
+        protocol: "https",
+        hostname: "pe-images.s3.amazonaws.com"
+      },
+      {
+        protocol: "https",
+        hostname: "deerassociation.com"
+      },
+      {
+        protocol: "https",
+        hostname: "cdn.pixabay.com"
+      },
+      {
+        protocol: "https",
+        hostname: "www.adorama.com"
       }
     ]
   }
