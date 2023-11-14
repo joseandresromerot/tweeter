@@ -23,14 +23,14 @@ const TweetPost = ({ tweet }: TweetPostProps) => {
     comments = []
   } = tweet;
   const { fullname: retweetedByFullname = "" } = retweetedBy ?? {};
-  const { avatarUrl, fullname: userFullname = "" } = user ?? {};
+  const { avatarUrl, fullname: userFullname = "", id } = user ?? {};
 
   return (
     <div className="my-7">
       {retweetedBy && <TweetPostRetweetedBy retweetedByFullname={retweetedByFullname} />}
 
       <div className="bg-[#FFFFFF] rounded-xl p-4 flex flex-col items-stretch shadow-[0px_2px_4px_0px_#0000000D]">
-        <TweetPostHeader avatarUrl={avatarUrl} userFullname={userFullname} datetime={datetime} />
+        <TweetPostHeader userId={id} avatarUrl={avatarUrl} userFullname={userFullname} datetime={datetime} />
 
         <p className="text-[#4F4F4F] font-sans font-semibold text-[17px]">{message}</p>
 

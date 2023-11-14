@@ -31,7 +31,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="bg-[#F2F2F2] min-h-screen relative">
       <TopNavbar options={MENU} />
-      <main>
+      <main className="w-full relative">
         {children}
       </main>
       <BottomNavbar options={MENU} />

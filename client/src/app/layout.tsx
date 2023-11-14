@@ -3,7 +3,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Nunito_Sans, Nunito } from 'next/font/google'
 
-const nunito = Nunito_Sans({
+const nunito = Nunito({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-nunito',

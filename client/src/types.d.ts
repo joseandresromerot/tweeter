@@ -5,6 +5,7 @@ interface UserData {
   fullname: string
   avatarUrl?: string
   numberOfFollowers?: number
+  numberOfFollowings?: number
   biography?: string
   landscapeUrl?: string
 }
@@ -86,6 +87,7 @@ interface TweetPostRetweetedByProps {
 }
 
 interface TweetPostHeaderProps {
+  userId: string
   avatarUrl?: string
   userFullname: string
   datetime: number
@@ -144,4 +146,8 @@ interface TrendPanelProps {
 
 interface WhoToFollowUserProps {
   user: UserData
+}
+
+interface FollowButtonProps {
+  className?: string;
 }

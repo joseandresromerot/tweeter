@@ -136,3 +136,15 @@ export const whoToFollow: UserData[] = [
     biography: "Follow me on IG: @arstyy"
   }
 ];
+
+export const getUserById = (userId: string) => {
+  return {
+    id: "4",
+    fullname: "Mikael Stanley",
+    avatarUrl: "https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg",
+    numberOfFollowers: 230000,
+    numberOfFollowings: 12000,
+    landscapeUrl: "https://cdn.pixabay.com/photo/2012/08/27/14/19/mountains-55067_640.png",
+    biography: "Photographer & Filmmaker based in Copenhagen, Denmark"
+  };
+}
